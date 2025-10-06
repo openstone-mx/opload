@@ -20,7 +20,7 @@ $ fred serve --classname RouterCatalog --classpath opload.router.catalog
 * Or use the direct `opload serve` command. 
 
 
-A key that doesn't exists will return a `null` value (i.e., `"val":null`):
+A key that doesn't exist will return a `null` value (i.e., `"val":null`):
 
 ```
 $ curl --request GET http://0.0.0.0:8000/get?key=demo/1.txt
