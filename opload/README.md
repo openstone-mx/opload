@@ -7,7 +7,7 @@ You should be able to clone this repo and install the package:
 $ pip install -e opload
 ```
 
-For local testing, be sure to set the ollowing env.variables: 
+For local testing, be sure to set the following env.variables: 
 * `OPLOAD_BACKEND_SERVICE=STDLIB`
 
 To facilitate endpoint calling while developing, you may also want to set `FRD_RESTAPI_DISABLE_AUTH=1`.
