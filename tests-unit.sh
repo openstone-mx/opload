@@ -1,0 +1,1 @@
+(cd opload; coverage run -m pytest src/test)

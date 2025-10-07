@@ -1,0 +1,1 @@
+mypy opload --ignore-missing-imports --install-types --non-interactive
