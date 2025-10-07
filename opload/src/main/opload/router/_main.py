@@ -10,11 +10,12 @@ class RouterMainMixin(RouterInterfaceMixin):
         summary="Get key-value",
         description="Get a value from the key-value store by its key.",
     )
-    def get(self, key: str, presigned_url: bool = False, **kwargs) -> dict:
-        return {
+    def get(self, key: str, presigned_url: bool = False, direct_val: bool = False, **kwargs) -> dict:
+        out = self.runner_backend.keyval(key=key).get(presigned_url=presigned_url)
+        return out if direct_val else {
             "ok": True,
             "key": key,
-            "val": self.runner_backend.keyval(key=key).get(presigned_url=presigned_url),
+            "val": out,
             **kwargs
         }
 
