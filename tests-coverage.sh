@@ -1,0 +1,1 @@
+(cd opload; coverage report --omit="test_*")
