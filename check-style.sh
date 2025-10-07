@@ -1,0 +1,1 @@
+pycodestyle opload --max-line-length 120
